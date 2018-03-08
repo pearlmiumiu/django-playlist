@@ -4,7 +4,7 @@ from . import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^articles/', include('articles.urls')),
+    url(r'^articles/', include('articles.urls')),  ### register the articles.urls to the root url. 
     url(r'^about/$', views.about),
     url(r'^$', views.homepage),
 ]
