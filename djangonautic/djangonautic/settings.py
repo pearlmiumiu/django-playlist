@@ -54,7 +54,7 @@ ROOT_URLCONF = 'djangonautic.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['templates'],  ### add 'template' into the 'dirs' for the purpose the render, it looks into the template fold and it has the pages we need to render
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
