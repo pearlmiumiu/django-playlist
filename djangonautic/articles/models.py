@@ -9,5 +9,5 @@ class Article(models.Model):
     # add in thumbnail later
     # add in author later
 
-    def __str__(self):
+    def __str__(self):  ### control how article is gonna look when we run Articles.objects.all() ==> it will show up 'Article: articletile'
         return self.title
